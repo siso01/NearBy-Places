@@ -4,11 +4,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.domain.main.usecases.NearByUseCase
 import com.example.nearBy.ui.UiModel.NetworkResponseState
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@HiltViewModel
 class NearByActivityViewModel @Inject constructor(
     private val useCase: NearByUseCase
 ) : ViewModel() {

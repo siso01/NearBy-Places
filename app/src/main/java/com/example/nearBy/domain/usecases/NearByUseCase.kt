@@ -1,9 +1,7 @@
 package com.example.domain.main.usecases
 
-import com.example.example.Geolocation
 import com.example.nearBy.data.local.database.NearByResponseModel
-import com.example.nearBy.data.repository.NearbyRepository
-import kotlinx.coroutines.flow.Flow
+import com.example.nearBy.domain.Repository.NearbyRepository
 import javax.inject.Inject
 
 class NearByUseCase @Inject constructor(

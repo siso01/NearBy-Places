@@ -10,8 +10,10 @@ import com.example.architecturesampletwo.R
 import com.example.architecturesampletwo.databinding.MainActivityLayoutBinding
 import com.example.nearBy.data.local.database.NearByResponseModel
 import com.example.nearBy.ui.UiModel.NetworkResponseState
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class NearByActivity : AppCompatActivity() {
 
     private lateinit var binding : MainActivityLayoutBinding

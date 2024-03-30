@@ -1,11 +1,11 @@
-package com.example.nearBy.data.repository
+package com.example.nearBy.data.repositoryImpl
 
 import com.example.nearBy.data.local.database.NearByResponseModel
 import com.example.nearBy.data.network.ApiService
-import kotlinx.coroutines.flow.Flow
+import com.example.nearBy.domain.Repository.NearbyRepository
 import javax.inject.Inject
 
-class INearbyRepository @Inject constructor(
+class INearbyRepositoryImpl @Inject constructor(
     private val service: ApiService
 ) : NearbyRepository {
     override suspend fun fetchNearbyPlaces(

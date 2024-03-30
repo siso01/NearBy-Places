@@ -10,16 +10,16 @@ class ApiClient {
 
     object RetrofitInstance {
 
-        private val apiClient: ApiClient
+        private val apiService: ApiService
 
         init {
             val okHttpClient = createOkHttpClient()
             val retrofit = createRetrofitInstance(okHttpClient)
-            apiClient = retrofit.create(ApiClient::class.java)
+            apiService = retrofit.create(ApiService::class.java)
         }
 
-        fun getMyApi(): ApiClient {
-            return apiClient
+        fun getApiClient(): ApiService {
+            return apiService
         }
 
         private fun createOkHttpClient(): OkHttpClient {
